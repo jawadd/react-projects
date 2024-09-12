@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = ( ) => {
     return(
-        <h1>Home Component</h1>
+        <h1 contentEditable='true'>Home Component</h1>
     )
 }
 
