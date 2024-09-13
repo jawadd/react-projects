@@ -7,7 +7,7 @@ function About(props){
         <>
         <h1>About page</h1>
         <h2> Created by: {props.name}</h2>
-        <img src={img} />
+        <img src={require('./images/photo.png')} />
         </>
     )
 }
