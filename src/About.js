@@ -1,4 +1,5 @@
 import React from "react";
+import img from './images/photo.png'
 
 function About(props){
 
@@ -6,6 +7,7 @@ function About(props){
         <>
         <h1>About page</h1>
         <h2> Created by: {props.name}</h2>
+        <img src={img} />
         </>
     )
 }
