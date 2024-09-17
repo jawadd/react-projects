@@ -7,12 +7,13 @@ import Home from './Home'
 import About from './About'
 import MainPage from './MainPage';
 import Card from './Card';
+import Condition  from './Condition';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <MainPage />
-  
+   {/* <MainPage /> */}
+  <Condition />
   </React.StrictMode>
 );
 
