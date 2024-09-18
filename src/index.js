@@ -10,13 +10,14 @@ import Card from './Card';
 import Condition  from './Condition';
 import Clock from './Clock';
 import Events from './Events';
+import Form from './Form';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    {/* <MainPage /> */}
-  < Events />
+  < Form />
   </React.StrictMode>
 );
 
