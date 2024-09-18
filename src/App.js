@@ -1,15 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import React  from 'react';
+import React, { useState }  from 'react';
 
 function App() {
-  const stat= "Learn React with Jawad";
+  
+  const[count, setCount] = useState(0);
+
+  const increment =() =>{
+    setCount(count+1)
+  }
+  const decrement =() =>{
+    setCount(count-1)
+  }
   return (
     
 <React.Fragment> 
-  <h1>Hello World!</h1>
-   <h2>From Jawad Hussain</h2>
-   <h3>{stat}</h3>
+  <div className='box'>
+    <h1>{count}</h1>
+    <button onClick={increment}>Increment</button>  <button onClick={decrement}>Decrement</button>
+  </div>
    </React.Fragment>
   
         

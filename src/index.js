@@ -9,11 +9,12 @@ import MainPage from './MainPage';
 import Card from './Card';
 import Condition  from './Condition';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    {/* <MainPage /> */}
-  <Condition />
+  <App />
   </React.StrictMode>
 );
 
