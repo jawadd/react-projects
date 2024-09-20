@@ -11,13 +11,14 @@ import Condition  from './Condition';
 import Clock from './Clock';
 import Events from './Events';
 import Form from './Form';
+import UseEffectHook from './UseEffectHook';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    {/* <MainPage /> */}
-  < Form />
+  <UseEffectHook />
   </React.StrictMode>
 );
 
