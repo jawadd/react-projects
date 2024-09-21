@@ -1,7 +1,7 @@
 import React from 'react'
 import ChildB from './ChildB'
 
-const ChildA = (name) => {
+const ChildA = ({name}) => {
     
   return (
      <ChildB name={name}/>

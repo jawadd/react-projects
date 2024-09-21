@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { dataFirst, dataSec } from './App'
 
-const ChildC = (name) => {
+const ChildC = ({name}) => {
    // const name = useContext(dataFirst);
    // const info = useContext(dataSec)
    return(
