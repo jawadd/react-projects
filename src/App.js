@@ -1,24 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState }  from 'react';
+import ChildA from './ChildA'
 
 function App() {
-  
-  const[count, setCount] = useState(0);
+  const name="Code with using Prop Drilling";
 
-  const increment =() =>{
-    setCount(count+1)
-  }
-  const decrement =() =>{
-    setCount(count-1)
-  }
   return (
-    
 <React.Fragment> 
-  <div className='box'>
-    <h1>{count}</h1>
-    <button onClick={increment}>Increment</button>  <button onClick={decrement}>Decrement</button>
-  </div>
+  <h1>PROPS DRILLING</h1>
+  <ChildA name={name}/>
    </React.Fragment>
   
         

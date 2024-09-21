@@ -1,10 +1,10 @@
 import React from 'react'
 import ChildB from './ChildB'
 
-const ChildA = () => {
+const ChildA = (name) => {
     
   return (
-     <ChildB />
+     <ChildB name={name}/>
   )
 }
 
