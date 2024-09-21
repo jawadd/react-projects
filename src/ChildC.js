@@ -1,15 +1,16 @@
 import React, { useContext } from 'react'
-import { dataFirst, dataSec } from './App'
+import { firstName, lastName } from './App'
 
 const ChildC = ({name}) => {
-   // const name = useContext(dataFirst);
-   // const info = useContext(dataSec)
+    const firstNam = useContext(firstName);
+   const lastNam = useContext(lastName)
    return(
       
-      
-      <h1>Chile C {name}</h1>
-      /* <h1>My Channel Name :: {name}</h1>
-      <h1>Please :: {info}</h1> */     
+      <div>
+      <div><h1>First Name :: {firstNam}</h1></div>
+      <div><h1>Last Name :: {lastNam}</h1></div>
+    </div>
+          
     )
 }
 

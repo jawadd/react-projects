@@ -1,16 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState }  from 'react';
+import React, { createContext, useState }  from 'react';
 import ChildA from './ChildA'
-
+const firstName= createContext();
+  const lastName= createContext();
 function App() {
-  const name=" Code with Jawad using Prop Drilling";
+  
 
   return (
 <React.Fragment> 
-  <h1>PROPS DRILLING </h1>
-  <br></br>
-  <ChildA name={name}/>
+  <firstName.Provider value={"Jawad"}>
+    <lastName.Provider value={"Hussain"}>
+    <ChildA />
+    </lastName.Provider>
+  </firstName.Provider>
+  
    </React.Fragment>
   
         
@@ -18,3 +22,4 @@ function App() {
 }
 
 export default App;
+export {firstName,lastName}
