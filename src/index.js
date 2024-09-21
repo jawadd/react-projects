@@ -12,13 +12,14 @@ import Clock from './Clock';
 import Events from './Events';
 import Form from './Form';
 import UseEffectHook from './UseEffectHook';
+import Ref from './Ref';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    {/* <MainPage /> */}
-  <UseEffectHook />
+  <Ref />
   </React.StrictMode>
 );
 
