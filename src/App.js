@@ -1,20 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { createContext, useState }  from 'react';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
 import ChildA from './ChildA'
-const firstName= createContext();
-  const lastName= createContext();
+
 function App() {
   
 
   return (
 <React.Fragment> 
-  <firstName.Provider value={"Jawad"}>
-    <lastName.Provider value={"Hussain"}>
-    <ChildA />
-    </lastName.Provider>
-  </firstName.Provider>
   
+  <AccessAlarmIcon />
+  <AddShoppingCartOutlinedIcon />
    </React.Fragment>
   
         
@@ -22,4 +20,4 @@ function App() {
 }
 
 export default App;
-export {firstName,lastName}
+
