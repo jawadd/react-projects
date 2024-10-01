@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Login from './Login';
+import Error from './Error';
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Route path='/about' element={<About/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/login' element={<Login/>}/>
+    <Route path='*' element={<Error/>}/>
   </Routes>
   
   </BrowserRouter>
