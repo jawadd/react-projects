@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link ,NavLink} from "react-router-dom";
+import { Link ,NavLink, Outlet} from "react-router-dom";
 
 
 const Contact = () => {
@@ -13,6 +13,12 @@ const Contact = () => {
                 <li><NavLink to="/login">Login</NavLink></li>
             </ul>
         </nav>
+        <div>
+        <NavLink to="youtube">Youtube</NavLink>
+        <NavLink to="twitter">Twitter</NavLink>
+        <NavLink to="github">Github</NavLink>
+        </div>
+        <Outlet/>
       <h1> Contact Us page </h1>
     </div>
   )
