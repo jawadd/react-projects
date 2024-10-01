@@ -33,3 +33,7 @@ nav a:hover {
       width: 100%;
   }
 }
+
+.active{
+  color: red;
+}
