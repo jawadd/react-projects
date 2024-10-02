@@ -30,6 +30,7 @@ function App() {
     </Route>
 
     <Route path='/login' element={<Login/>}/>
+    <Route path='/login/:fname/:lname/' element={<Login/>}/>
     <Route path='*' element={<Error/>}/>
   </Routes>
   

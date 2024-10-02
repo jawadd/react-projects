@@ -1,8 +1,11 @@
 import React from 'react'
-import { Link,NavLink } from "react-router-dom";
+import { Link,NavLink,useParams,useLocation } from "react-router-dom";
 
 
 const Login = () => {
+  const {fname,lname}= useParams();
+  const location = useLocation();
+  
   return (
     <div>
          <nav>
@@ -14,7 +17,8 @@ const Login = () => {
             </ul>
         </nav>
 
-      <h1> Login Page </h1>
+      <h1> Hello {fname} {lname} </h1>
+      <h1> You are currently on {location.pathname} location  </h1>
     </div>
   )
 }
